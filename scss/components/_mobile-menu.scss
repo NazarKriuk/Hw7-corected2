@@ -1,0 +1,124 @@
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 500ms;
+    overflow-y: scroll; 
+
+    .container-menu{
+        padding: 40px;
+    }
+    
+        
+        
+    
+    &__close{
+        position: absolute;
+        top:21px;
+        right: 25px;
+        border: none;
+        background-color: white;
+
+        &:hover,
+        &:focus {
+            fill: var(--color-hover);
+        }
+    }
+    &.is-open{
+        transform: translateX(0);
+    }
+    &__navigation{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+    }
+    
+
+    &__links{
+        margin-bottom: auto;
+        
+    }
+    &__links >li{
+        margin-bottom: 30px;
+    }
+    &__links >li:last-child{
+        margin-bottom: 0;
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: #212121;
+        
+        
+
+        &:hover,
+        &:focus {
+            color: var(--color-hover);
+        }
+    }
+   
+
+    &__tell{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: #2196F3;
+    }
+    &__email{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: #757575;
+    }
+
+    &__pages{
+        margin-top: 60px;
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+       
+    }
+    &__page{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: #2196F3;
+    }
+    &__ver{
+       padding: 0px 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &__ver:last-child{
+        border: none;
+    }
+    &__ver:first-child{
+        padding-left: 0;
+    }
+    &__contacts > li{
+        margin-bottom: 30px;
+    }
+    &__contacts >li:last-child{
+        margin:0;
+    }
+    
+
+  
+}
+
+
+
